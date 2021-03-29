@@ -22,8 +22,7 @@
     "test": "mongodb-runner start && jasmine",
     "coverage": "nyc jasmine",
     "prettier": "prettier --write '{cloud,spec}/{**/*,*}.js' 'index.js'",
-    "watch": "babel-watch index.js",
-    "test:kill": "lsof -ti:27017 | xargs kill && npm test"
+    "watch": "babel-watch index.js"
   },
   "engines": {
     "node": "12.9.1"
