@@ -45,7 +45,7 @@ jobs:
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         application_name: "#ENTER_APPLICATION_NAME"
         environment_name: "#ENTER_ENV_NAME"
-        region: "ap-southeast-2"
+        region: "#ENTER_APPLICATION_REGION"
         version_label: "${{ steps.format-time.outputs.replaced }}"
         deployment_package: deploy.zip
     - name: Deployed!
